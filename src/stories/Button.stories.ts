@@ -1,6 +1,5 @@
 import Button from "../Components/Button";
 import type {Meta, StoryObj} from "@storybook/react";
-import {Colors} from "../utils/colors";
 
 const meta: Meta = {
     title: "Button",
