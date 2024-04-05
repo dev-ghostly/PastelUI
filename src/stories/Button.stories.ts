@@ -16,19 +16,25 @@ export const Primary: typeStoryObj = {
         children: "Primary",
         $color: "blue"
     },
-    tags: ["Primary"]
-}
-
-export const Secondary: typeStoryObj = {
-    args: {
-        $color: "lightblue",
-        children: "Secondary"
-    },
 }
 
 export const Danger: typeStoryObj = {
     args: {
         $color: "red",
         children: "Danger"
+    },
+}
+
+export const Success: typeStoryObj = {
+    args: {
+        $color: "green",
+        children: "Success"
+    },
+}
+
+export const Warning: typeStoryObj = {
+    args: {
+        $color: "orange",
+        children: "Warning"
     },
 }

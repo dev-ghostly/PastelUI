@@ -48,6 +48,12 @@ const Button = styled.button<ButtonProps>`
     padding: 10px 20px;
     font-size: 16px;
     cursor: pointer;
+    &:hover {
+        opacity: 0.8;
+    }
+    &:active {
+        opacity: 0.6;
+    }
 `
 
 export default Button
