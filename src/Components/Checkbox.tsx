@@ -1,7 +1,8 @@
 import styled from "styled-components";
+import { GlobalStyle } from "./GlobalStyle";
 
 export interface CheckboxProps {
-  $checked?: boolean | undefined;
+  $checked: boolean | undefined;
   $label?: string | undefined;
 }
 
@@ -13,18 +14,18 @@ const Check = styled.input.attrs<CheckboxProps>(({ $checked }) => ({
 `;
 
 const Label = styled.label`
-    font-size: 16px;
-    font-family: "Montserrat";
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
 `;
 
 const Checkbox = ({ $checked, $label }: CheckboxProps) => {
     return (
         <>
+            <GlobalStyle />
             <Check $checked={$checked} />
             <Label>{$label}</Label>
         </>
     );
 }
-export { Label };
 
 export default Checkbox;
