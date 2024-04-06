@@ -36,6 +36,7 @@ const AccordionHeader = styled.div`
     border-top: 1px solid #ccc;
     font-size: 16px;
     font-family: Arial, sans-serif;
+    font-weight: bold;
 `;
 
 const AccordionContent = styled.div`
