@@ -2,9 +2,9 @@ import * as PastelUi from './Components/PastelUI'
 function App() {
   return (
     <>
-      <PastelUi.ResponsiveContainer $width='1280px' $margin='auto'>
+      <PastelUi.ResponsiveContainer $maxWidth='1280px' $margin='auto'>
         <PastelUi.Flex $justifyContent='space-between' $alignItems='center'>
-          <PastelUi.Box $width="100px" $padding='20px' $backgroundColor='#F9F9F9'>Navigation</PastelUi.Box>
+          <PastelUi.Box $width="fit-content" $padding='20px' $backgroundColor='#F9F9F9'>Navigation</PastelUi.Box>
           <PastelUi.Box $width="100px" $backgroundColor='#F9F9F9'>
             <PastelUi.Button $color='green'>Sign In</PastelUi.Button>
           </PastelUi.Box>

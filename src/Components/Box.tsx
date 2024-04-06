@@ -6,6 +6,8 @@ export interface BoxProps {
   $backgroundColor?: string | undefined;
   $padding?: string | undefined;
   $margin?: string | undefined;
+  $border?: string | undefined;
+  $borderRadius?: string | undefined;
 }
 
 const Box = styled.div<BoxProps>`
@@ -14,6 +16,8 @@ const Box = styled.div<BoxProps>`
     background-color: ${props => props.$backgroundColor || "white"};
     padding: ${props => props.$padding || "0"};
     margin: ${props => props.$margin || "0"};
+    border: ${props => props.$border || "0"};
+    border-radius: ${props => props.$borderRadius || "0"};
 `;
 
 export default Box;

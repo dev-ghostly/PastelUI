@@ -16,5 +16,6 @@ export const Default: typeStoryObj = {
         $backgroundColor: "tomato",
         children: "This is a Box",
         $padding: "10px",
+        $borderRadius: "5px",
     },
 }
