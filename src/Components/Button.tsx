@@ -1,11 +1,13 @@
 import styled from "styled-components"
 import {Colors} from "../utils/colors"
+import { GlobalStyle } from "./GlobalStyle"
 
 export interface ButtonProps {
     $color?: keyof typeof Colors | undefined
+    children: string
 }
 
-const Button = styled.button<ButtonProps>`
+const MyButton = styled.button<ButtonProps>`
     background-color: ${props => {
         switch(props.$color) {
             case "lightblue": {
@@ -47,6 +49,7 @@ const Button = styled.button<ButtonProps>`
     border-radius: 5px;
     padding: 10px 20px;
     font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
     cursor: pointer;
     &:hover {
         opacity: 0.8;
@@ -54,6 +57,13 @@ const Button = styled.button<ButtonProps>`
     &:active {
         opacity: 0.6;
     }
-`
+`;
 
-export default Button
+const Button = (props: ButtonProps) => {
+    return <>
+        <GlobalStyle />
+        <MyButton $color={props.$color}>{props.children}</MyButton>
+    </>
+}
+
+export default Button;
