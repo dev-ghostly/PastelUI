@@ -50,6 +50,7 @@ const AccordionContent = styled.div`
     font-size: 16px;
     font-family: Arial, sans-serif;
     margin-bottom: 13px;
+    line-height: 1.4;
 `;
 
 function AccordionItemComponent({content, title} : AccordionItemProps) {
