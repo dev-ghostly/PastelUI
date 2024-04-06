@@ -1,6 +1,6 @@
 import { useState } from "react";
 import styled from "styled-components";
-
+import { MdOutlineKeyboardArrowDown, MdOutlineKeyboardArrowUp } from "react-icons/md";
 export interface AccordionItemProps {
     title : string;
     content : string;
@@ -56,7 +56,7 @@ function AccordionItemComponent({content, title} : AccordionItemProps) {
     const [isOpen, setIsOpen] = useState(false);
     return (
         <div>
-            <AccordionHeader onClick={() => setIsOpen(!isOpen)}><p>{title}</p><span>X</span></AccordionHeader>
+            <AccordionHeader onClick={() => setIsOpen(!isOpen)}><p>{title}</p><div>{isOpen ? <MdOutlineKeyboardArrowUp size={24} /> : <MdOutlineKeyboardArrowDown size={24} />}</div></AccordionHeader>
             {isOpen && <AccordionContent>{content}</AccordionContent>}
         </div>
     )
