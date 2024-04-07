@@ -18,6 +18,7 @@ export const CardBody = styled.div`
     width: fit-content;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-family: sans-serif;
 `;
 
 export const CardImage = styled.img`
@@ -34,7 +35,7 @@ export const CardTitle = styled.h2`
 `;
 
 export const CardDescription = styled.p`
-    margin-top : 10px;
+    margin-top : 5px;
     width: 300px;
     line-height: 1.35;
 `;
