@@ -1,9 +1,12 @@
 import styled from "styled-components"
 import {Colors} from "../utils/colors"
 import { GlobalStyle } from "./GlobalStyle"
+import { StyleHTMLAttributes } from "react"
 
 export interface ButtonProps {
     $color?: keyof typeof Colors | undefined
+    // onClick as a function that returns void
+    onClick?: (...params : any[]) => void
     children: string
 }
 
@@ -62,7 +65,7 @@ const MyButton = styled.button<ButtonProps>`
 const Button = (props: ButtonProps) => {
     return <>
         <GlobalStyle />
-        <MyButton $color={props.$color}>{props.children}</MyButton>
+        <MyButton $color={props.$color} onClick={props.onClick}>{props.children}</MyButton>
     </>
 }
 

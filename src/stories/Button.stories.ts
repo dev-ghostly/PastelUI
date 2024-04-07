@@ -13,7 +13,8 @@ export default meta;
 export const Primary: typeStoryObj = {
     args: {
         children: "Primary",
-        $color: "blue"
+        $color: "blue",
+        onClick: (e : any) => console.log(e.target)
     },
 }
 
