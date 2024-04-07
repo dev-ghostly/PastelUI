@@ -1,6 +1,7 @@
 import Alert from "./Alert";
 import Box from "./Box";
 import Button from "./Button";
+import Card from "./Card";
 import Checkbox from "./Checkbox";
 import Flex from "./Flex";
 import Grid from "./Grid";
@@ -13,6 +14,7 @@ export {
     Alert,
     Box,
     Button,
+    Card,
     Checkbox,
     Flex,
     Grid,
